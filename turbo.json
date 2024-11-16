@@ -2,15 +2,17 @@
   "$schema": "https://turbo.build/schema.json",
   "pipeline": {
     "build": {
-      "outputs": [".next/**", "!.next/cache/**", "public/**"],
-      "env": []
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"]
     },
     "lint": {
-      "outputs": [],
-      "inputs": [".eslintrc.*", "src/**"]
+      "outputs": []
     },
-    "type-check": {
-      "outputs": ["*.tsbuildinfo"]
+    "test": {
+      "outputs": []
+    },
+    "dev": {
+      "cache": false
     }
   }
 }

@@ -7,7 +7,7 @@ const OPEN_IN_GITHUB_TEXT = "Open in Github";
 
 test("should shown home page", async ({ page }) => {
   await page.goto(LOCAL_HOST_URL);
-  await expect(page.locator("h1")).toContainText("chat-app");
+  await expect(page.locator("h1")).toContainText("tutormama");
   await expect(
     page.locator("a", { hasText: USE_THIS_TEMPLATE_TEXT })
   ).toBeVisible();
@@ -26,7 +26,7 @@ test("click use this template should redirect to github generate project", async
 
   await newPage.waitForLoadState();
   expect(newPage.url()).toBe(
-    "https://github.com/sozonome/chat-app/generate"
+    "https://github.com/tsoji78/chat-app/generate"
   );
 });
 
@@ -41,5 +41,5 @@ test("click use this template should redirect to github repo", async ({
   ]);
 
   await newPage.waitForLoadState();
-  expect(newPage.url()).toBe("https://github.com/sozonome/chat-app");
+  expect(newPage.url()).toBe("https://github.com/tsoji78/chatapp");
 });

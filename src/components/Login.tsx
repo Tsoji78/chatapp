@@ -39,7 +39,7 @@ export const Login = () => {
             size='lg'
             textAlign="center"
           >
-            Hey, Welcome to Chat App! 👋
+            Hey, Welcome to TutorMama! 👋 
           </Heading>
           <Button w={'full'} variant={'outline'} leftIcon={<FcGoogle />} onClick={signIn}>
           <Center>
