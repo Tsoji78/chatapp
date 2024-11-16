@@ -13,5 +13,5 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_CHAT_APP_CE087 }}'
-          projectId: chat-app-ce087
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_TUTORMAMA_4888B }}'
+          projectId: tutormama-4888b

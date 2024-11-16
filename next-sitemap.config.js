@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 const NextSitemapConfig = {
-  siteUrl: "https://chat-app-ce087.web.app",
+  siteUrl: "https://tutormama-488b.web.app",
   generateRobotsTxt: true,
 };
 
