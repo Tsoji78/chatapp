@@ -39,3 +39,19 @@ Messages: timestamp, body
 4. Message History: The chat application stores the history of messages for each chat room, which are visible to users when they join the room.
 
 5. Private Messaging: Users are able to send private messages to other users.
+const withPWA = require("next-pwa")({
+  dest: "public",
+  disable:
+    process.env.NODE_ENV === "development" ||
+    process.env.NODE_ENV === "preview" ||
+    process.env.NODE_ENV === "production",
+});
+
+/** @type {import('next').NextConfig} */
+module.exports = withPWA({
+  swcMinify: true,
+  reactStrictMode: true,
+  eslint: {
+    dirs: ["src"],
+  },
+});
