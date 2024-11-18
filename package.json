@@ -2,7 +2,7 @@
   "name": "tutormama",
   "version": "0.1.0",
   "private": true,
-  "author": "srikanta30",
+  "author": "mama",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
